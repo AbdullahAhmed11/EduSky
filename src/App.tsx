@@ -17,6 +17,7 @@ import TakeExamPage from './pages/student/TakeExamPage';
 import ExamResultPage from './pages/student/ExamResultPage';
 import PurchasesPage from './pages/student/PurchasesPage';
 import ProgressPage from './pages/student/ProgressPage';
+import LectureDetailPage from './pages/student/LectureDetailPage';
 import ParentDashboardPage from './pages/parent/ParentDashboardPage';
 
 const queryClient = new QueryClient({
@@ -45,6 +46,7 @@ function AppRoutes() {
           <Route path="exams/:id/result" element={<ExamResultPage />} />
           <Route path="purchases" element={<PurchasesPage />} />
           <Route path="progress" element={<ProgressPage />} />
+          <Route path="lectures/:id" element={<LectureDetailPage />} />
         </Route>
       </Route>
 

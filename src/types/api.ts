@@ -158,6 +158,44 @@ export interface EducationalStage {
   id: string;
   name: string;
   nameAr?: string;
+  nameEn?: string;
   createdAt?: string;
   updatedAt?: string;
+}
+
+export interface EducationalMaterial {
+  id: string;
+  nameAr?: string;
+  nameEn?: string;
+}
+
+export interface Lecture {
+  id: string;
+  name: string;
+  description?: string;
+  startAt: string;
+  endAt: string;
+  educationalMaterialId?: string;
+  educationalMaterial?: EducationalMaterial;
+  educationalStageId?: string;
+  educationalStage?: EducationalStage;
+  subMaterialId?: string;
+  videoLink?: string;
+  attachmentFile?: string;
+  isPaid?: boolean;
+  price?: number;
+  hasAccess?: boolean;
+  purchaseStatus?: PurchaseStatus;
+  createdAt?: string;
+  updatedAt?: string;
+}
+
+export interface LecturePurchase {
+  id: string;
+  lectureId: string;
+  studentId: string;
+  status?: PurchaseStatus;
+  price?: number;
+  transferScreenshot?: string;
+  createdAt?: string;
 }

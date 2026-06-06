@@ -134,6 +134,10 @@ export interface TranslationKeys {
     badge: string;
     title: string;
     welcome: string;
+    tabs: {
+      overview: string;
+      lectures: string;
+    };
     stats: {
       examsTaken: string;
       purchased: string;
@@ -147,6 +151,41 @@ export interface TranslationKeys {
     recentExams: string;
     pendingPurchases: string;
     noRecent: string;
+  };
+  lecturesPage: {
+    tabs: {
+      all: string;
+      free: string;
+      paid: string;
+      browse: string;
+    };
+    free: string;
+    paid: string;
+    pending: string;
+    material: string;
+    stage: string;
+    watch: string;
+    buyLecture: string;
+    awaitingApproval: string;
+    noLectures: string;
+    purchaseModalTitle: string;
+    transferScreenshot: string;
+    transferHint: string;
+    chooseImage: string;
+    transferRequired: string;
+    submitPurchase: string;
+    cancel: string;
+    viewDetails: string;
+    description: string;
+    schedule: string;
+    hasAccess: string;
+    lockedPreview: string;
+    openVideo: string;
+    externalVideo: string;
+    watchExternal: string;
+    unsupportedVideo: string;
+    downloadAttachment: string;
+    back: string;
   };
   examsPage: {
     badge: string;
@@ -388,6 +427,10 @@ export const en: TranslationKeys = {
     badge: 'Dashboard',
     title: 'Welcome back,',
     welcome: 'Track your learning journey',
+    tabs: {
+      overview: 'Overview',
+      lectures: 'Lectures',
+    },
     stats: {
       examsTaken: 'Exams Taken',
       purchased: 'Purchased',
@@ -401,6 +444,41 @@ export const en: TranslationKeys = {
     recentExams: 'Recent Results',
     pendingPurchases: 'Pending Purchases',
     noRecent: 'No exam results yet',
+  },
+  lecturesPage: {
+    tabs: {
+      all: 'My Lectures',
+      free: 'Free',
+      paid: 'Paid',
+      browse: 'Browse All',
+    },
+    free: 'Free',
+    paid: 'Paid',
+    pending: 'Pending',
+    material: 'Subject',
+    stage: 'Stage',
+    watch: 'Watch Lecture',
+    buyLecture: 'Buy Lecture',
+    awaitingApproval: 'Awaiting Approval',
+    noLectures: 'No lectures available yet',
+    purchaseModalTitle: 'Purchase Lecture',
+    transferScreenshot: 'Transfer screenshot',
+    transferHint: 'Upload a screenshot of your payment transfer to complete the purchase request.',
+    chooseImage: 'Choose image',
+    transferRequired: 'Please upload a transfer screenshot',
+    submitPurchase: 'Submit Purchase',
+    cancel: 'Cancel',
+    viewDetails: 'Details',
+    description: 'Description',
+    schedule: 'Schedule',
+    hasAccess: 'Unlocked',
+    lockedPreview: 'Purchase this lecture to unlock the video and materials.',
+    openVideo: 'Open Video',
+    externalVideo: 'The lecture opens on an external platform in a new tab.',
+    watchExternal: 'Watch outside EduSky',
+    unsupportedVideo: 'This video format cannot be played inline.',
+    downloadAttachment: 'Download Attachment',
+    back: 'Back to Dashboard',
   },
   examsPage: {
     badge: 'Exams',
